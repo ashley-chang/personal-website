@@ -15,6 +15,7 @@ $paragraph-font: 'Work Sans', sans-serif;
 html {
   height: 100%;
   width: 100%;
+  font-size: 15px;
 }
 
 ul {
@@ -24,14 +25,17 @@ ul {
 p {
   margin-bottom: 1rem;
   line-height: 1.4em;
-  font-size: 15px;
   color: $base-color;
   font-family: $paragraph-font;
 }
 
 a {
   text-decoration: none;
-  color: $base-color;
+  color: $base-color-2;
+  transition: all 0.5s ease;
+  &:hover {
+    color: $base-color;
+  }
 }
 
 .emphasis {
@@ -40,6 +44,11 @@ a {
   // background-color: $base-color-2;
   // color: white;
   // color: $emphasis-color;
+}
+
+.emphasis::selection {
+  color: lighten($base-color-2, 50%);
+  background-color: $base-color-2;
 }
 
 

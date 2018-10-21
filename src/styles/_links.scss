@@ -1,0 +1,9 @@
+.links {
+    font-family: $paragraph-font;
+    ul, li {
+      display: inline-block;
+    }
+    li {
+      padding-left: 0.8rem;
+    }
+}
