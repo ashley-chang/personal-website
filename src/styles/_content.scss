@@ -1,10 +1,13 @@
 .content {
-  margin-left: 250px;
+  margin-left: 50px;
   padding-left: 2rem;
   padding-right: 2rem;
   color: $base-color;
   height: 100vh;
   overflow: auto;
+  @include mq(medium) {
+    margin-left: 250px;
+  }
 }
 
 .container-title {

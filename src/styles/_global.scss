@@ -6,6 +6,25 @@ $emphasis-color: #D4764C;
 $heading-font: 'Roboto', sans-serif;
 $paragraph-font: 'Work Sans', sans-serif;
 
+// Media Queries
+// --------------
+$breakpoints: (
+  small: 480px,
+  medium: 800px,
+  large: 1024px
+);
+
+@mixin mq($mq-breakpoint, $mq-breakpoints: $breakpoints) {
+  @if map-has-key($mq-breakpoints, $mq-breakpoint) {
+    $mq-breakpoint: map-get($mq-breakpoints, $mq-breakpoint);
+  }
+  @media screen and (min-width: #{$mq-breakpoint}) {
+    @content;
+  }
+}
+
+//-----------------------------------
+
 * {
   margin: 0;
   padding: 0;
