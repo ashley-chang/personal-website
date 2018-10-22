@@ -1,0 +1,21 @@
+.landing-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.landing-page .landing-page-logo {
+  font-size: 3.5rem;
+  letter-spacing: 0.4rem;
+  padding: 1rem;
+}
+
+.landing-page-enter {
+  font-family: $paragraph-font;
+  font-size: 1rem;
+  text-transform: lowercase;
+}
