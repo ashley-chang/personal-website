@@ -22,6 +22,9 @@
   text-transform: uppercase;
   letter-spacing: 0.06em;
   border-bottom: 1px solid $base-color;
+}
+
+.container-title[data-num] {
   &::before {
     content: attr(data-num);
     display: inline-block;

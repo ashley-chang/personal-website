@@ -40,7 +40,6 @@ class Nav extends Component {
     } else {
       className = "nav";
     }
-    console.log(this.state.responsiveNav);
     return (
       <nav className={ className }>
         <NavButton visible={this.state.visible} onClick={this.clickHandler}/>
