@@ -1,0 +1,47 @@
+.project-info-page__top {
+  margin-top: calc(20vh - 2rem);
+}
+
+.project-info-page__container-title {
+  @extend .container-title;
+  margin-top: 0.7rem;
+  &::before {
+    content: '\00a0';
+    border-left: 10px solid lighten($base-color, 5%);
+    display: inline-block;
+  }
+}
+
+.project-info-page__back-link {
+  color: $base-color-2;
+  font-size: 1.1rem;
+  text-transform: lowercase;
+  svg {
+    margin-right: 0.3rem;
+  }
+}
+
+.project-info-page__body {
+  display: flex;
+}
+
+.project-info-page__img {
+  width: 400px;
+  height: 250px;
+}
+
+.project-info-page__about {
+  margin: 0 1rem;
+}
+
+.project-info-page__desc {
+
+}
+
+.project-info-page__comment {
+
+}
+
+.project-info-page__tools {
+
+}

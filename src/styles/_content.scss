@@ -28,8 +28,8 @@
   &::before {
     content: attr(data-num);
     display: inline-block;
-    padding-right: 0.25em;
     padding-left: 10px;
+    padding-right: 0.25em;
     border-left: 10px solid lighten($base-color, 5%);
   }
 }

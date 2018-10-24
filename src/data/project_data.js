@@ -2,16 +2,17 @@ const ProjectData = [
   {
     id: "1",
     title: "Harbor Italian",
-    img: "img/harbor-spa-fine-dining.png",
-    description: "This project was inspired by my love for food.",
+    img: "/img/harbor-spa-fine-dining.png",
+    desc: "This project was inspired by my love for food.",
     comment: "",
     tools: ["HTML", "JQuery", "Foundation 6", "SASS"],
     links: [{}]
   },
   {
     id: "2",
-    title: "React Timer",
-    description: "",
+    title: "Task Timer",
+    img: "/img/task-timer.png",
+    desc: "",
     comment: "",
     tools: ["React", "CSS"],
     links: [{}]
@@ -19,7 +20,7 @@ const ProjectData = [
   {
     id: "3",
     title: "Tomodachis",
-    description: "This ",
+    desc: "This ",
     comment: "",
     tools: ["HTML", "CSS", "JQuery", "Foundation 6"],
     links: [{}]
@@ -27,7 +28,7 @@ const ProjectData = [
   {
     id: "4",
     title: "Sage Street Coffee Roasters",
-    description: `This website was created as a practice project for CSS grid and
+    desc: `This website was created as a practice project for CSS grid and
     flexbox. It was inspired by a trip to Oregon, where I visited a number of cozy
     coffee shops.`,
     comment: "",
@@ -37,9 +38,18 @@ const ProjectData = [
   {
     id: "5",
     title: "React-Redux Calculator",
-    description: "",
+    img: "/img/react-redux-calculator.png",
+    desc: "",
     comment: "",
     tools: ["React", "Redux", "CSS"],
+    links: [{}]
+  }, {
+    id: "6",
+    title: "Sustainable Energy Tribute Page",
+    img: "/img/sustainable-energy-tribute-page.png",
+    desc: "",
+    comment: "",
+    tools: ["HTML", "CSS", "Javascript"],
     links: [{}]
   }
 
