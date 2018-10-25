@@ -1,10 +1,6 @@
-@import 'styles/global.scss';
-
-@import 'styles/landing_page.scss';
-@import 'styles/nav.scss';
-@import 'styles/content.scss';
-@import 'styles/links.scss';
-
-@import 'styles/projects.scss';
-@import 'styles/project_square.scss';
-@import 'styles/project_info_page.scss';
+@import "node_modules/normalize-scss/sass/normalize";
+@import 'styles/1-helpers/1-helpers';
+@import 'styles/2-base/2-base';
+@import 'styles/3-layout/3-layout';
+@import 'styles/4-modules/4-modules';
+@import 'styles/5-templates/5-templates';

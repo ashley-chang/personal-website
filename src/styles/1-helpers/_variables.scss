@@ -1,0 +1,23 @@
+// *******************
+// Color Variables
+// *******************
+
+$base-color: #373738; //dark gray for text
+$base-color-2: #7a7a7a; //lighter gray for emphasized text
+
+// *******************
+// Font Variables
+// *******************
+
+$heading-font: 'Roboto', sans-serif;
+$paragraph-font: 'Work Sans', sans-serif;
+
+// *******************
+// Breakpoints
+// *******************
+
+$breakpoints: (
+  small: 480px,
+  medium: 800px,
+  large: 1024px
+);
