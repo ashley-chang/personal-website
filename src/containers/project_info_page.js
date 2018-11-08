@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 
 import ProjectData from '../data/project_data';
+import Links from '../components/links';
 
 
 library.add(faAngleLeft);
@@ -16,6 +17,7 @@ class ProjectInfo extends Component {
   constructor(props) {
     super(props);
     this.getProject = this.getProject.bind(this);
+    this.makeToolsList = this.makeToolsList.bind(this);
     this.state = {
       project: this.getProject(this.props.match.params.projectid)
     }
@@ -25,6 +27,18 @@ class ProjectInfo extends Component {
     //get match params
     const project = ProjectData.find((project) => project.id === projectId );
     return project;
+  }
+
+  makeToolsList(toolArr) {
+    let str = '';
+    for (let tool of toolArr) {
+      if (tool !== toolArr[toolArr.length-1]) {
+        str += tool + ', ';
+      } else {
+        str += tool;
+      }
+    }
+    return str;
   }
 
   render() {
@@ -39,11 +53,17 @@ class ProjectInfo extends Component {
           <h2 className="project-info-page__container-title">{this.state.project.title}</h2>
         </div>
         <div className="project-info-page__body">
-          <img className="project-info-page__img" src={this.state.project.img}/>
+          <div className="project-info-page__img">
+            <img src={this.state.project.img} alt={this.state.project.title}/>
+          </div>
           <div className="project-info-page__about">
-            <h4>About this project</h4>
-            <p>{this.state.project.desc}</p>
-            <p>{this.state.project.comment}</p>
+            <span>About this project</span>
+            <p className="project-info-page__desc">{this.state.project.desc}</p>
+            <p className="project-info-page__comment">{this.state.project.comment}</p>
+            <p className="project-info-page__tools">
+            <span>Tools</span>
+            {this.makeToolsList(this.state.project.tools)}</p>
+            <Links label="Project Links" links={this.state.project.links}/>
           </div>
         </div>
       </div>

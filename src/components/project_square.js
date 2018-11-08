@@ -9,12 +9,13 @@ const ProjectSquare = (props) => {
 
   return (
     <div className="project-square">
-      <img className="project-square__image" src={props.project.img} />
+      <img className="project-square__image" src={props.project.img} alt={props.project.title} />
       <div className="project-square__title">{props.project.title}</div>
-      <p className="project-square__desc">{excerpt}</p>
       <Link to={ path }>view project</Link>
     </div>
   );
 }
 
 export default ProjectSquare;
+
+      // <p className="project-square__desc">{excerpt}</p>

@@ -23,25 +23,47 @@
 
 .project-info-page__body {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: -1.5rem;
+}
+
+.project-info-page__body > div {
+  margin-top: 1.5rem;
 }
 
 .project-info-page__img {
-  width: 400px;
-  height: 250px;
+  max-width: 400px;
+  max-height: 250px;
+  display: inline-block;
+  img {
+    height: auto;
+    width: 100%;
+  }
 }
 
 .project-info-page__about {
+  max-width: 400px;
+  flex: 1 1 250px;
   margin: 0 1rem;
+  span {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
 }
 
-.project-info-page__desc {
+p.project-info-page__desc {
 
 }
 
-.project-info-page__comment {
-
+p.project-info-page__comment {
+  font-style: italic;
+  color: $base-color-2;
 }
 
 .project-info-page__tools {
-
+  span {
+    font-weight: bold;
+    margin-right: 0.8rem;
+  }
 }
