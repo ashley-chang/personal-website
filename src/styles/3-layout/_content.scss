@@ -4,7 +4,9 @@
   padding-right: 2rem;
   color: $base-color;
   height: 100vh;
-  overflow: auto;
+  div {
+    margin-bottom: 2rem;
+  }
   @include mq(medium) {
     margin-left: 250px;
   }

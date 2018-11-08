@@ -4,9 +4,7 @@ import { Link } from 'react-router-dom';
 
 const ProjectSquare = (props) => {
   //receives a project [Object]
-  let excerpt = props.project.desc ? props.project.desc.substring(0, 80) : "";
   let path = `/projects/${props.project.id}`;
-
   return (
     <div className="project-square">
       <img className="project-square__image" src={props.project.img} alt={props.project.title} />
@@ -17,5 +15,3 @@ const ProjectSquare = (props) => {
 }
 
 export default ProjectSquare;
-
-      // <p className="project-square__desc">{excerpt}</p>

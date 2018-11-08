@@ -7,10 +7,7 @@ import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 import ProjectData from '../data/project_data';
 import Links from '../components/links';
 
-
 library.add(faAngleLeft);
-
-// import Links from '../components/links';
 
 class ProjectInfo extends Component {
   //Get the project id through the link parameter.
@@ -42,7 +39,6 @@ class ProjectInfo extends Component {
   }
 
   render() {
-    console.log(this.state.project.img);
     return (
       <div>
         <div className="project-info-page__top">
