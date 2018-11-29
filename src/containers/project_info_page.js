@@ -68,7 +68,3 @@ class ProjectInfo extends Component {
 }
 
 export default ProjectInfo;
-
-
-// <h2 className="container-title">{this.props.project.title}</h2>
-//   <Links label="Project Links" links={this.props.project.links}/>

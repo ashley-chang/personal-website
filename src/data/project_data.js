@@ -1,10 +1,23 @@
 const ProjectData = [
   {
+    title: "Sage Street Coffee Roasters",
+    img: "/img/sage-street.png",
+    desc: `This fully responsive website, made for a fictional coffee shop, was built from scratch using Node.js, Express, and MongoDB as a practice project for working with the server side. It features a working shopping cart and checkout process, user authentication, a blog with commenting capabilities, and email contact form.`,
+    comment: `This website is a passion project inspired by a trip to Oregon, whose multitudes of quaint coffee shops sparked my love for coffee.`,
+    tools: ["HTML", "Handlebars", "SASS", "JQuery", "Node.js", "Express", "MongoDB", "Mongoose"],
+    links: [
+      {
+        text: "Github",
+        href: "https://github.com/ashley-chang/sage-street-coffee-roasters"
+      }
+    ]
+  },
+  {
     title: "Harbor Italian",
     img: "/img/harbor-spa-fine-dining.png",
     desc: "This fully responsive website, which features a fictional restaurant/spa, is built with Foundation 6, Sass, and Jquery. It is single-paged, and features a JQuery-powered slider written from scratch, smooth-scrolling and scroll reveal.",
     comment: "This project was inspired by my love for food, so I had quite a bit of fun thinking up the theme and finding inspiration for photos and the menu.",
-    tools: ["HTML", "JQuery", "Foundation 6", "SASS", "ScrollReveal.js"],
+    tools: ["HTML", "JQuery", "Foundation 6", "SASS"],
     links: [
       {
         text: "Github",
@@ -34,15 +47,19 @@ const ProjectData = [
     ]
   },
   {
-    title: "Sage Street Coffee Roasters",
-    img: "/img/sage-street.png",
-    desc: `This fully responsive website, made for a fictional coffee shop, was made from scratch as a practice project for flexbox and CSS grid. Built with Node.js and Express, it also features a working contact box which enables users to send messages directly from the website.`,
-    comment: `This website is a passion project inspired by a trip to Oregon, whose multitudes of quaint coffee shops sparked my love for coffee.`,
-    tools: ["HTML", "CSS", "JQuery", "Node.js", "Express"],
+    title: "Coffee Friends",
+    img: "/img/coffee-friends.png",
+    desc: `This React-based app is geared towards beginner coffee connoisseurs to explain the differences between several of the most popular types of coffee. Each coffee category features a brief explanation of how it is made, and also includes a small CSS graphic representing ingredient ratios.`,
+    comment: `This was a fun project I built for myself in order to get familiar with all the different types of coffee I always saw in cafes and restaurants.`,
+    tools: ["React.js", "CSS"],
     links: [
       {
         text: "Github",
-        href: "https://github.com/ashley-chang/sage-street"
+        href: "https://github.com/ashley-chang/coffee-friends"
+      },
+      {
+        text: "Demo",
+        href: "https://coffee-friends.herokuapp.com/"
       }
     ]
   },
