@@ -50,7 +50,7 @@ const ProjectData = [
     title: "Coffee Friends",
     img: "/img/coffee-friends.png",
     desc: `This React-based app is geared towards beginner coffee connoisseurs to explain the differences between several of the most popular types of coffee. Each coffee category features a brief explanation of how it is made, and also includes a small CSS graphic representing ingredient ratios.`,
-    comment: `This was a fun project I built for myself in order to get familiar with all the different types of coffee I always saw in cafes and restaurants.`,
+    comment: `This was a fun project I built for myself in order to get familiar with all the different types of coffee frequently seen in cafes and restaurants.`,
     tools: ["React.js", "CSS"],
     links: [
       {

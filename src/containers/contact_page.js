@@ -8,6 +8,14 @@ class Contact extends Component {
       {
           text: "Github",
           href: "https://github.com/ashley-chang"
+      },
+      {
+          text: "LinkedIn",
+          href: "https://www.linkedin.com/in/ashley-chang-22b77bb6/"
+      },
+      {
+          text: "Resume",
+          href: "https://drive.google.com/file/d/1n__oBvFPWBcgMeW6h9w-vI2Jo6Aj7A2B/view?usp=sharing"
       }
     ];
 
